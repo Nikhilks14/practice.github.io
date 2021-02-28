@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern tech</title>
+
+    <style>
+        body {
+            background-color: rgb(238, 216, 227);
+            height: 1000px;
+        }
+
+        .topbar {
+            background-color: rgb(125, 103, 146);
+            /* border-radius: 30px; */
+            position: fixed;
+            font-size: 40px;
+            top: 0px;
+            width: 100%;
+            margin: 0px -8px;
+            padding: 0px 0px;
+            height: 100px;
+            /* overflow: hidden; */
+        }
+
+        .topbar li {
+            margin: 10px 10px;
+            padding: 50px 10px;
+            text-decoration: none;
+            float: left;
+
+        }
+
+        .topbar ul {
+            margin: 10px 10px;
+            padding: 50px 10px;
+            overflow: auto;
+            list-style-type: none;
+        }
+
+        .sidenav {
+            border: 2px solid red;
+            /* border-radius: 88px; */
+            background-color: #2196F3;
+            text-decoration: none;
+            display: inline-block;
+            height: 100%;
+            width: 80px;
+            margin: 0px;
+            padding: 57px 64px;
+            position: fixed;
+            z-index: 1;
+            top: 100px;
+            left: 0px;
+            right: 0px;
+        }
+
+        .sidenav li {
+            /* display: inline-block; */
+            list-style-type: none;
+        }
+
+        .sidenav a {
+
+            display: block;
+            font-size: 30px;
+            margin: 20px auto;
+        }
+
+        .main {
+            font-size: 20px;
+            margin-top: 200px;
+            margin-left: 250px;
+            margin-right: 155px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="topbar">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul class="sidenav">
+        <li><a href="">Home1</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">kuch likhao</a></li>
+        <li><a href="">home4</a></li>
+    </ul>
+
+    <div class="main">
+        <h1>Heading 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, nobis neque. Ipsum, amet. Et,
+            expedita ab praesentium fugit ut delectus tempore eum molestiae illum in non officiis animi dicta eos labore
+            nesciunt perspiciatis pariatur cupiditate ad. Saepe nemo consequatur corrupti sit amet sequi adipisci itaque
+            fugiat cumque. Sit blanditiis, voluptas iusto voluptatum cum reiciendis fugit!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nemo error, quam exercitationem ullam
+            aspernatur in ad animi illo provident laboriosam blanditiis!</p>
+        <h1>heading 2 </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt id voluptate quidem ipsam dolor? Qui dolore
+            reprehenderit ducimus velit quaerat molestiae assumenda nulla a corporis rem! Soluta reprehenderit quis
+            consectetur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fugiat ipsum maxime omnis atque quo incidunt
+            ut, earum consectetur ex deleniti numquam magni quidem temporibus voluptates ipsa, repudiandae, nobis
+            corrupti ullam iusto qui molestiae deserunt. Consequuntur, sunt! Quisquam ex, sequi quia quae beatae laborum
+            iste consequatur corrupti quas culpa, corporis quaerat quam reprehenderit sapiente illum? Fugiat at aliquam
+            impedit dignissimos ad eveniet doloremque ex, repudiandae soluta!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio maiores a laudantium voluptatem ullam
+            veritatis corporis perspiciatis? Repellat, corrupti quaerat! Aliquid sequi dolorum iste molestiae natus
+            possimus vitae quibusdam autem neque culpa odio, nostrum atque harum ullam rerum ut. Aperiam fuga dolorum
+            ipsum at?</p>
+
+<pre style="color: brown;">
+                DROP TABLE mytable;
+                CREAT TABLE mytable
+                ( controlnbr number null,
+                lvlnbr varchar2(100) null,
+                emp_id varchar2(40) null,
+                emp_name varchar2(40) null,
+                mgr_id varchar2(40) null);
+                commit;
+                declare
+                employeeID varchar2(40) := ‘100’;
+                managerID varchar2(40) := ‘100’;
+                rec_empList myListOfEmp%rowtype; — I create a table with a list of specific employees I wish to report, just has Emp_ID
+                cursor myList is
+                select emp_ID from myListOfEmp;
+                begin
+                open myList;
+                <>
+                fetch myList into rec_empList;
+                if myList%NOTFOUND then
+                go to CloseMyList;
+                end if;
+                employeeID := rec_MyList.Emp_ID;
+                INSERT INTO mytable
+                SELECT ROWNUM,
+                SUBSTR(LPAD(TO_CHAR(LEVEL),LEVEL,’.’),1,25),
+                employeeID,
+                employeeName,
+                managerID
+                FROM Employee_M
+                start with manager_id= employeeID
+                connect by prior employee_id=manager_id;
+                goto NextRec;
+
+                <>
+
+                close myList;
+
+                end;
+
+ </pre>
+    </div>
+</body>
+
+</html>
