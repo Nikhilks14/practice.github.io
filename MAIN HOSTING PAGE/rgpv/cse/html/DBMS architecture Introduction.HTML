@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS architecture Introduction</title>
+    <link rel="stylesheet" href="paragraph.css">
+
+</head>
+
+<body>
+    <div class="vertical-menu">
+        <a href="#">dbms</a>
+        <a href="dbms concept .html">DBMS Concepts</a>
+        <a href="DBMS architecture Introduction.HTML" class="active">architecture Introduction</a>
+        <a href="dbms and file approach.html">Database approach v/s Traditional file</a>
+        <a href="data model .html">data models</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 4</a>
+    </div>
+
+    <div class="main">
+        <h1>DBMS architecture Introduction</h1>
+
+        <p>
+        <ul>
+            <li>The DBMS design depends upon its architecture. The basic client/server architecture is used to deal with
+                a large number of PCs, web servers, database servers and other components that are connected with
+                networks.
+            </li>
+            <li>
+                DBMS architecture depends upon how users are connected to the database to get their request done.
+
+            </li>
+            <li>
+                The client/server architecture consists of many PCs and a workstation which are connected via the
+                network.
+            </li>
+        </ul>
+        </p>
+
+        <h2> Types of DBMS Architecture --- add image</h2>
+        <p>
+
+            Database architecture can be seen as a single tier or multi-tier. But logically, database architecture is of
+            two types like: 2-tier architecture and 3-tier architecture.
+        <h3 style="color: red;">
+            1-Tier Architecture ---------add image
+        </h3>
+        <ul>
+            <li>
+                In this architecture, the database is directly available to the user. It means the user can directly sit
+                on the DBMS and uses it.
+
+            </li>
+
+            <li>
+                Any changes done here will directly be done on the database itself. It doesn't provide a handy tool for
+                end users.
+            </li>
+
+            <li>
+                The 1-Tier architecture is used for development of the local application, where programmers can directly
+                communicate with the database for the quick response.
+            </li>
+
+        </ul>
+        <h3 style="color: red;">
+            2-Tier Architecture --- add image
+        </h3>
+        <ul>
+            <li>
+                The 2-Tier architecture is same as basic client-server. In the two-tier architecture, applications on
+                the client end can directly communicate with the database at the server side. For this interaction,
+                API's like: ODBC, JDBC are used.
+
+            </li>
+
+            <li>
+                The user interfaces and application programs are run on the client-side.
+
+            </li>
+
+            <li>
+                The server side is responsible to provide the functionalities like: query processing and transaction
+                management.
+            </li>
+
+            <li>
+                To communicate with the DBMS, client-side application establishes a connection with the server side.
+            </li>
+        </ul>
+
+        <h3 style="color: red;">
+            3-Tier Architecture --- add image
+        </h3>
+
+        <ul>
+            <li>
+                The 3-Tier architecture contains another layer between the client and server. In this architecture,
+                client can't directly communicate with the server.
+            </li>
+
+            <li>
+                The application on the client-end interacts with an application server which further communicates with
+                the database system.
+            </li>
+
+            <li>
+                End user has no idea about the existence of the database beyond the application server. The database
+                also has no idea about any other user beyond the application.
+            </li>
+
+            <li>
+                The 3-Tier architecture is used in case of large web application.
+            </li>
+
+        </ul>
+        </p>
+
+    </div>
+</body>
+
+</html>
